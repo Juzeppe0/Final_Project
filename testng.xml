@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI Test Suite">
+
+    <test name="10 UI TESTS">
+        <classes>
+            <class name="ui.tests.RegisterUserTest"/>
+            <class name="ui.tests.LoginUserCorrectTest"/>
+            <class name="ui.tests.LoginUserIncorrectTest"/>
+            <class name="ui.tests.LogoutUserTest"/>
+            <class name="ui.tests.RegisterExistingEmailTest"/>
+            <class name="ui.tests.ContactUsTest"/>
+            <class name="ui.tests.VerifyTestCasesPageTest"/>
+            <class name="ui.tests.VerifyProductsTest"/>
+            <class name="ui.tests.SearchProductTest"/>
+            <class name="ui.tests.VerifySubscriptionTest"/>
+        </classes>
+    </test>
+
+    <test name="10 API TESTS">
+        <classes>
+            <class name="api.tests.GetAllProductsListTest"/>
+            <class name="api.tests.PostToAllProductsListTest"/>
+            <class name="api.tests.GetAllBrandsListTest"/>
+            <class name="api.tests.PutToAllBrandsListTest"/>
+            <class name="api.tests.PostSearchProductTest"/>
+            <class name="api.tests.PostSearchProductWithoutParamTest"/>
+            <class name="api.tests.PostVerifyLoginValidTest"/>
+            <class name="api.tests.PostVerifyLoginWithoutEmailTest"/>
+            <class name="api.tests.DeleteVerifyLoginTest"/>
+            <class name="api.tests.PostVerifyLoginInvalidTest"/>
+        </classes>
+    </test>
+
+</suite>
